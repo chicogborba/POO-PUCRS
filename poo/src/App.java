@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Client client1 = new Client("João", "123");
+        Client client1 = new Client("João", "05370963029");
 
         // Products List
-        Product Pizza = new Product(2, "Pizza", 18.0);
-        Product Coca = new Product(3, "Coca", 3.0);
-        Product Pastel = new Product(4, "Pastel", 8.0);
+        Product Pizza = new Product(2, "🍕 Pizza", 18.0);
+        Product Coca = new Product(3, "🥤 Coca", 3.0);
+        Product Pastel = new Product(4, "🥐 Pastel", 8.0);
 
         Sell sell1 = new Sell(client1);
 

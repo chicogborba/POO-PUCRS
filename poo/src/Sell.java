@@ -6,12 +6,12 @@ public class Sell {
 
   public Sell(Client client) {
     this.client = client;
+    this.productsSold = new ArrayList<ProductSold>();
   }
 
   public void add(Product product, int quantity) {
     ProductSold productSold = new ProductSold(quantity, product);
     this.productsSold.add(productSold);
-    System.out.println(productsSold.toString());
   }
 
   public void add(Product product) {
