@@ -19,6 +19,17 @@ public class Sell {
     this.productsSold.add(productSold);
   }
 
+  public void remove(Product product) {
+    // Removes item from the list
+    for (ProductSold productSold : this.productsSold) {
+      if (productSold.getProduct().getCode() == product.getCode()) {
+        this.productsSold.remove(productSold);
+        break;
+      }
+    }
+
+  }
+
   public double getTotalValue() {
     double totalValue = 0.0;
     for (ProductSold productSold : this.productsSold) {
