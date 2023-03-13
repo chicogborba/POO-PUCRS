@@ -19,6 +19,7 @@ public class App {
         // Loop to get user input and execute the desired action
         // Ends when the user prints the invoice
         program.actionMenu();
+        input.close();
 
     }
 }

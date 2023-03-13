@@ -49,7 +49,7 @@ public class Sell {
     for (ProductSold productSold : this.productsSold) {
       Product product = productSold.getProduct();
       invoice += "\n - " + productSold.getQuantity() + " " + product.getName();
-      invoice += ":  R$ " + product.getPrice();
+      invoice += ":  R$ " + product.getPrice() * productSold.getQuantity();
     }
     invoice += "\n" + bar;
     invoice += "\nTotal: R$ " + this.getTotalValue();
