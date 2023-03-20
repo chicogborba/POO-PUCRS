@@ -20,4 +20,13 @@ public class Product {
   public Double getPrice() {
     return this.price;
   }
+
+  @Override
+  public String toString() {
+    return "Produto{" +
+        "codigo=" + getCode() +
+        ", nome='" + getName() + '\'' +
+        ", preco='" + price + '\'' +
+        '}';
+  }
 }
