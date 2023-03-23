@@ -1,3 +1,5 @@
+package Products;
+
 public class ProductSold {
 
   private int quantity;

@@ -1,3 +1,5 @@
+package Products;
+
 public class ProdAlcoolico extends Product {
 
     private static double taxaAlcool;

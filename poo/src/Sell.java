@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
+import Clients.Client;
+import Products.Product;
+import Products.ProductSold;
+
 public class Sell {
   private Client client;
   private ArrayList<ProductSold> productsSold;
@@ -43,7 +47,7 @@ public class Sell {
     String bar = "-------------------------";
     invoice = bar;
     invoice += "\nClient: " + this.client.getClient();
-    invoice += "\nCPF: " + this.client.getCPF();
+    invoice += "\nCPF: " + this.client.getDoc();
     invoice += "\n" + bar;
     invoice += "\nProdutos:";
     for (ProductSold productSold : this.productsSold) {

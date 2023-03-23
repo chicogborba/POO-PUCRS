@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import Products.Product;
+
 public class TextUtils {
 
   public static void printBar() {

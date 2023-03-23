@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Clients.Client;
+import Products.Product;
+
 public class Program {
 
   private Scanner input;
@@ -98,7 +101,7 @@ public class Program {
   public void actionMenu() {
     while (isInvoicePrinted == false) {
       TextUtils.clearConsole();
-      TextUtils.printMenu(client.getClient(), client.getCPF());
+      TextUtils.printMenu(client.getClient(), client.getDoc());
       int option = input.nextInt();
       switch (option) {
         case 1:
